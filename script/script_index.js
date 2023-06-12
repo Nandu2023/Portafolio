@@ -176,3 +176,8 @@ function education() {
     window.location.href = "./education.html?lang=es";
   }
 }
+
+function blog() {
+  window.location.href = "./blog.html?lang=es";
+  
+}
