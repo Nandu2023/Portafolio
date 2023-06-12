@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="./styles/styles_index.css" />
+    <!--    <script src="./script.js"></script>  No sirve porque aun no ha cargado la pagina  -->
+
+  </head>
+  
+  <body>
+    
+    <header>
+      <div class="class-language-selector">
+        <img
+          id="spanishFlag"
+          src="./img/spain-flag.png"
+          alt="Español"
+          onclick="langChange('es')"
+          class="class_flag"
+          style="width: 60px; margin-right: 10px"
+        />
+
+        <img
+          id="englishFlag"
+          src="./img/uk-flag.png"
+          alt="English"
+          onclick="langChange('en')"
+          class="class_flag"
+          style="width: 60px; margin-right: 10px"
+        />
+      </div>
+
+      <div>
+        <img
+          src="./img/foto-hrp-web.png"
+          alt="Mi foto"
+          class="class_foto-hrp-web"
+        />
+      </div>
+
+      <!--    <header> -->
+      <h1>Hernando Ramirez P.</h1>
+      <h2 id="id_h3_position_mp"></h2>
+      <p id="id_h3_overview_mp"></p>
+    </header>
+
+    <main>
+      <div class="class_detail">
+        <section id="skills">
+          <h3 id="id_h3_skills_mp"></h3>
+          <p id="id_p_skills_mp"></p>
+          <button
+            id="id_button_skills_mp"
+            class="class_button_know_more"
+            onclick="skillLanguage()"
+          ></button>
+        </section>
+
+        <section id="experience">
+          <h3 id="id_h3_experience_mp"></h3>
+          <p id="id_p_experience_mp"></p>
+          <button
+            id="id_button_experience_mp"
+            class="class_button_know_more"
+            onclick="experience()"
+          ></button>
+        </section>
+
+        <section id="certifications">
+          <h3 id="id_h3_certifications_mp"></h3>
+          <p id="id_p_certifications_mp"></p>
+          <button
+            id="id_button_certifications_mp"
+            class="class_button_know_more"
+            onclick="certifications()"
+          ></button>
+        </section>
+
+        <section id="experience_no_sap">
+          <h3 id="id_h3_experience_no_sap_mp"></h3>
+          <p id="id_p_experience_no_sap_mp"></p>
+          <button
+            id="id_button_experience_no_sap_mp"
+            class="class_button_know_more"
+            onclick="experience_no_sap()"
+          ></button>
+        </section>
+
+        <section id="education">
+          <h3 id="id_h3_education_mp"></h3>
+          <p id="id_p_education_mp"></p>
+          <button
+            id="id_button_education_mp"
+            class="class_button_know_more"
+            onclick="education()"
+          ></button>
+        </section>
+
+        <section id="contact">
+          <h3 id="id_h3_contact_mp"></h3>
+          <p id="id_p_contact_mp"></p>
+          <ul>
+            <li>
+              <img src="./img/telephone.jpg" width="20px"/>
+              <strong id="id_p_tele_mp"></strong></li>
+            <li>
+              <img src="./img/yahoo.png" width="20px"/>
+              <strong>Email:</strong> hramirezpa@yahoo.com</li>
+            <li>
+              <img src="./img/linkedin.png" width="20px"/>
+              <strong>LinkedIn:</strong>
+              <a 
+                href="https://www.linkedin.com/in/hernando-ramirez-2648b921"
+                target="_blank"
+                >linkedin.com/in/hr</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section id="links">
+          <h3 id="id_h3_links_recomended"></h3>
+          <p id="id_p_links_recomended"></p>
+          <ul>
+            <li>
+              <img src="./img/platzi.png" width="20px"/>
+              <strong>Platzi:</strong>
+              <a 
+                href="https://www.platzi.com"
+                target="_blank"
+                >Platzi</a
+              >
+            </li>
+            <li>
+              <img src="./img/edteam.png" width="20px"/>
+              <strong>Ed team:</strong>
+              <a 
+                href="https://www.ed.team/"
+                target="_blank"
+                >Ed team</a
+              >
+            </li>              
+            <li>
+              <img src="./img/valuescom.png" width="20px"/>
+              <strong>Values:</strong>
+              <a 
+                href="https://www.pasala.org/"
+                target="_blank"
+                >Values</a
+              >
+            </li>      
+            <li>
+              <img src="./img/languageguide.jpg" width="20px"/>
+              <strong>Values:</strong>
+              <a 
+                href="www.languageguide.org"
+                target="_blank"
+                >Values</a
+              >
+            </li>                  
+                         
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="class_footer_blog">
+      <p>Blog</p>
+      <ul class="class_social_media"> 
+    </footer>    
+    <footer class="class_footer_dr">
+      <p>© Derechos reservados 2023</p>
+      <ul class="class_social_media"> 
+    </footer>        
+    <script src="./script/script_index.js"></script>
+  </body>
+</html>

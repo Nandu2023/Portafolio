@@ -1,0 +1,57 @@
+/* Estilos para la página de habilidades/cualidades */
+
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+/*  zoom: 0.85;  */
+  margin: 0; /* Elimina el margen por defecto del cuerpo de la página */
+  padding: 0; /* Elimina el relleno por defecto del cuerpo de la página */
+color: aliceblue;
+
+}
+
+header {
+  margin-bottom: auto;
+  text-align: center;
+  color: steelblue
+}
+
+h1 {
+  font-size: 50px;
+  margin: 10px 0px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+ul{
+  font-size: 22px;
+}
+
+#id_skills_list {
+  list-style-type: square;
+  margin: 50px 100px 50px 50px;  /*top right bottom left  */
+  text-align: justify;
+}
+
+.class_skill_xx{
+  margin-bottom: 10px;
+}
+
+#id_button_skills{
+  align-items: center; 
+}
+
+.class_goToHomePage{
+  display: block;
+  margin: 0 auto;    
+  font-size: 20px;
+  padding: 5px; 
+  color: aliceblue;
+  background-color: lightslategray;  
+}

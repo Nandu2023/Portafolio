@@ -1,0 +1,51 @@
+/* Estilos para la página de experience */
+
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+/*  zoom: 0.85;  */
+  margin: 0; /* Elimina el margen por defecto del cuerpo de la página */
+  padding: 0; /* Elimina el relleno por defecto del cuerpo de la página */
+  color: aliceblue;
+
+}
+
+header {
+  margin-bottom: auto;
+  text-align: center;
+  color: steelblue
+}
+
+h1 {
+  font-size: 50px;
+  margin: 10px 0px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+ul{
+  font-size: 22px;
+}
+
+.class_goToHomePage{
+  display: block;
+  margin: 0 auto;    
+  font-size: 20px;
+  padding: 5px; 
+  color: aliceblue;
+  background-color: lightslategray;  
+}
+
+#id_blog_abap_list{
+  text-align: justify;
+  white-space: pre-line;
+  font-size: 22px;
+  max-width: 1000px;
+  margin: 0 auto;  
+}

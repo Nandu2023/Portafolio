@@ -1,0 +1,106 @@
+/* https://nandu2023.github.io/Portafolio */
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  zoom: 0.85;
+  margin: 0; /* Elimina el margen por defecto del cuerpo de la página */
+  padding: 0; /* Elimina el relleno por defecto del cuerpo de la página */  
+}
+
+header {
+  margin-bottom: auto;
+  text-align: center;
+  color: steelblue
+}
+
+section,
+footer {
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 10px 0px;
+}
+
+h2 {
+  font-size: 0px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 0px 0px;
+  
+}
+
+/* hipervinculos */
+ul {
+  font-size: 20px;
+  margin: 0px 0px;
+}
+
+.class-language-selector {
+  display: flex;
+  justify-content: flex-end; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.class_flag {
+  width: 250px;
+  height: auto;
+}
+
+.class_foto-hrp-web{
+  display: block;
+  margin: 0 auto;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+#id_h3_overview_mp {
+  font-size: 20px;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  color: steelblue
+}
+
+.class_detail, a{
+  font-size: 20px;
+  color: aliceblue
+}
+
+.class_button_know_more{
+  color: aliceblue;
+  background-color: lightslategray;
+}
+
+/* Estilos para el pie de página */
+.class_footer_dr {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.class_footer_blog {
+  background-color: lightblue;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.class_social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
