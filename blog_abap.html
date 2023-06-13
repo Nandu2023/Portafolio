@@ -14,6 +14,8 @@
       <ul id="id_blog_abap_list">
 
         <strong>TRANSACCIONES</strong>
+
+        <div id="seccion1">        
         ABAPDOCU: documentacion abap
         SE01: ejecutar ordenes de transportar programa
         SE03: herramientas de transporte
@@ -50,7 +52,7 @@
         SE66: r/3 documentation statistics (test!) 
         SE68: translation administration 
         SE71: sapscript formularios 
-        SE72: SAPscript stilos
+        SE72: SAPscript stilos    
         SE73: SAPscript de fonts
               Pasos para cargar:
               https://sap4tech.net/add-new-font-family-smartforms-sap/
@@ -325,7 +327,6 @@
         2501 Tiempos personal 
         2502 Movimiento contingentes 
         3003 Gestión de materiales 
-        
 
         <hr>
         <strong>CAMPOS TABLAS EN INFOTIPOS</strong>
@@ -7835,7 +7836,8 @@
           Dentro de la rutina PERFORM genera_html antes del ENDFORM se coloca:
           
           *** INICIO PEGAR IMAGEN
-            MOVE '<img alt="" src="data:image/png;base64,'   TO gst_html_text.
+          <pre><code>
+            MOVE '&lt;img alt="" src="data:image/png;base64,'   TO gst_html_text.
             APPEND gst_html_text           TO gti_html_text.
           
             LOOP AT gti_new INTO gst_new.
@@ -7843,7 +7845,7 @@
               APPEND gst_html_text           TO gti_html_text.
             ENDLOOP.
           
-            MOVE '" />'   TO gst_html_text.
+            MOVE '" /&gt;'   TO gst_html_text. </code></pre>
             APPEND gst_html_text           TO gti_html_text.
           
           *** FIN PEGAR IMAGEN

@@ -45,7 +45,7 @@ function changeLanguage(language) {
     document.getElementById("id_p_contact_mp").textContent =
       "No dudes en contactarme para discutir oportunidades o para obtener más información.";
     document.getElementById("id_p_tele_mp").textContent =
-      "Teléfono +57 312 402 8021";
+      "Teléfono +57 ver en linkedin";
     document.getElementById("id_p_skills_mp").textContent =
       "Conocimiento técnico de SAP, Experiencia en implementación y soporte, Habilidades de comunicación, Orientación al cliente, Ingles nivel B1";
     document.getElementById("id_p_experience_mp").textContent =
@@ -84,7 +84,7 @@ function changeLanguage(language) {
     document.getElementById("id_p_contact_mp").textContent =
       "Feel free to contact me to discuss any opportunities and get more information.";
     document.getElementById("id_p_tele_mp").textContent =
-      "Telephone +57 312 402 8021";
+      "Telephone +57 see at linkedin";
     document.getElementById("id_p_skills_mp").textContent =
       "SAP technical knowledge, Implementation and support experience, Communication skills, Customer focus, English level B1";
     document.getElementById("id_p_experience_mp").textContent =
