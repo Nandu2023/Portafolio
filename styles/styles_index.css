@@ -88,14 +88,19 @@ ul {
   text-align: center;
   padding: 10px;
   font-size: 25px;
+
+  position: fixed;
+  bottom: 0;
+  right: 1px;
+  justify-content: flex-end; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */    
 }
 
 .class_footer_blog {
   background-color: lightblue;
-  color: #fff;
+  color: chocolate;
   text-align: center;
-  padding: 10px;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .class_social_media {
