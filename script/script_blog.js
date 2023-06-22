@@ -1,7 +1,7 @@
 document.getElementById("id_goToHomePage").textContent =
 "Retornar a la pagina principal...";
 
-document.getElementById('class_slider').removeAttribute('src');
+//document.getElementById('class_slider').removeAttribute('src');
 
 function goToHomePage() {
     const lvUrlParameters = new URL(location.href);
