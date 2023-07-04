@@ -68,7 +68,7 @@ img {
   max-height: 100%;
   max-width: 600px;
   margin: 0 auto;
-  margin-top: 600px;
+/*  margin-top: 600px;  */
   padding: 0 0 3% 0;
 }
 
@@ -129,4 +129,21 @@ a:hover {
   size: 1px;
   font-size: 24px;
   color: aliceblue;
+}
+
+.class_ciclismo {
+  font-size: 24px;
+  color: aliceblue;
+  align-content: center;
+}
+
+.class_contenedor {
+  display:flex;
+  flex-direction: column;
+  min-height:100%;
+}
+
+.class_contenedor > div {
+  flex:1;
+  display:flex;
 }
