@@ -57,9 +57,6 @@
     .window-dots span:nth-child(1) { background: #ef4444; }
     .window-dots span:nth-child(2) { background: #f59e0b; }
     .window-dots span:nth-child(3) { background: #22c55e; }
-    .nav { display: flex; align-items: stretch; justify-content: center; gap: 8px; align-self: stretch; flex: 1; }
-    .nav a { display: inline-flex; align-items: center; padding: 0 18px; border-bottom: 3px solid transparent; color: #334155; font-size: 14px; font-weight: 600; }
-    .nav a.active { border-color: var(--blue); color: #0f172a; }
     .profile { display: grid; place-items: center; width: 30px; height: 30px; border: 0; border-radius: 50%; background: #0f172a; color: #fff; }
     .profile svg { width: 16px; height: 16px; stroke-width: 2; }
     .hero {
@@ -184,8 +181,6 @@
     @media (max-width: 920px) {
       .topbar { flex-wrap: wrap; min-height: auto; padding: 18px 22px 0; }
       .brand { flex: 1; }
-      .nav { order: 3; flex-basis: 100%; overflow-x: auto; justify-content: flex-start; }
-      .nav a { min-height: 50px; padding: 0 14px; }
       .hero { padding: 48px 22px; }
       .content { padding: 24px 24px 42px; }
       .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
@@ -208,12 +203,6 @@
         <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
         <span>Base de Conocimiento SAP HCM/HXM</span>
       </div>
-      <nav class="nav" aria-label="Navegacion principal">
-        <a href="#" class="active">Inicio</a>
-        <a href="#categorias">Categorias</a>
-        <a href="#registros">Registros</a>
-        <a href="#visor">Detalle</a>
-      </nav>
       <button class="profile" type="button" aria-label="Perfil">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"></path><circle cx="12" cy="7" r="4"></circle></svg>
       </button>
