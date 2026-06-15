@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="16" fill="#061120"/>
+  <path d="M12 20C12 17.8 13.8 16 16 16H29C31.2 16 33 17.8 33 20V48C33 45.8 31.2 44 29 44H16C13.8 44 12 45.8 12 48V20Z" fill="#0B2238" stroke="#17A864" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M33 20C33 17.8 34.8 16 37 16H50C52.2 16 54 17.8 54 20V48C54 45.8 52.2 44 50 44H37C34.8 44 33 45.8 33 48V20Z" fill="#0B2238" stroke="#06D9EF" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M18 25H27" stroke="#DFF8FF" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M18 32H26" stroke="#7DE7F4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M39 25H48" stroke="#DFF8FF" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M39 32H47" stroke="#7DE7F4" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="32" cy="10" r="5" fill="#F59E0B"/>
+  <path d="M32 5V2.5" stroke="#DFF8FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M27 10H24.5" stroke="#DFF8FF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M39.5 10H37" stroke="#DFF8FF" stroke-width="2" stroke-linecap="round"/>
+  <text x="17" y="59" fill="#06D9EF" font-family="Arial, sans-serif" font-size="10" font-weight="700">LEARN</text>
+</svg>

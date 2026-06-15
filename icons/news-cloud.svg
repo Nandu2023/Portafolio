@@ -1,0 +1,10 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="16" fill="#061120"/>
+  <path d="M21 43H46C52.1 43 57 38.3 57 32.5C57 27.1 52.9 22.7 47.6 22.1C45.7 15.7 39.9 11 33 11C25.6 11 19.5 16.2 18.1 23.1C12 24.2 7.5 29.3 7.5 35.4C7.5 42.3 13.3 48 20.4 48H22" fill="#0B2238"/>
+  <path d="M21 43H46C52.1 43 57 38.3 57 32.5C57 27.1 52.9 22.7 47.6 22.1C45.7 15.7 39.9 11 33 11C25.6 11 19.5 16.2 18.1 23.1C12 24.2 7.5 29.3 7.5 35.4C7.5 42.3 13.3 48 20.4 48H22" stroke="#06D9EF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23 31H41" stroke="#DFF8FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M28 38H36" stroke="#7DE7F4" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="47" cy="19" r="5" fill="#17A864"/>
+  <path d="M45 19L46.5 20.5L49.5 17" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="18" y="57" fill="#06D9EF" font-family="Arial, sans-serif" font-size="10" font-weight="700">CLOUD</text>
+</svg>

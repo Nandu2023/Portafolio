@@ -1,0 +1,16 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="96" height="96" rx="24" fill="#061120"/>
+  <path d="M18 61L48 76L78 61" stroke="#06D9EF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 48L48 63L78 48" stroke="#7DE7F4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 35L48 50L78 35L48 20L18 35Z" fill="#0B2238" stroke="#DFF8FF" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="48" cy="35" r="12" fill="#7C3AED"/>
+  <path d="M42 35H54" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 29V41" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="24" cy="70" r="5" fill="#17A864"/>
+  <circle cx="72" cy="70" r="5" fill="#F59E0B"/>
+  <path d="M29 70H40" stroke="#17A864" stroke-width="3" stroke-linecap="round"/>
+  <path d="M56 70H67" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 50V63" stroke="#06D9EF" stroke-width="3" stroke-linecap="round"/>
+  <text x="34" y="89" fill="#06D9EF" font-family="Arial, sans-serif" font-size="13" font-weight="700">AI</text>
+  <text x="50" y="89" fill="#DFF8FF" font-family="Arial, sans-serif" font-size="13" font-weight="700">BTP</text>
+</svg>
