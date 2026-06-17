@@ -48,7 +48,7 @@ const copy = {
       "ABAP Cloud, Integration Suite, HXM/HCM, análisis técnico, desarrollos y resolución de incidentes.",
     experienceLabel: "Experiencia",
     experienceText:
-      "20+ años en proyectos SAP, implementaciones y soporte a base instalada.",
+      "18+ años en proyectos SAP, implementaciones y soporte a base instalada.",
     contactLabel: "Contacto",
     phone: "Teléfono +57 ver en LinkedIn",
     newsTitle: "Noticias ABAP/AI",
@@ -101,7 +101,7 @@ const copy = {
       "ABAP Cloud, Integration Suite, HXM/HCM, technical analysis, developments and incident resolution.",
     experienceLabel: "Experience",
     experienceText:
-      "20+ years in SAP projects, implementations and installed-base support.",
+      "18+ years in SAP projects, implementations and installed-base support.",
     contactLabel: "Contact",
     phone: "Telephone +57 see on LinkedIn",
     newsTitle: "ABAP/AI News",
