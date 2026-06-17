@@ -2,133 +2,169 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Portafolio Personal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Hernando Ramirez</title>
     <link rel="stylesheet" href="./styles/styles_index.css" />
-    <!--    <script src="./script.js"></script>  No sirve porque aun no ha cargado la pagina  -->
-
   </head>
-  
+
   <body>
-    
-    <header>
-      <div class="class-language-selector">
-        <img
-          id="spanishFlag"
-          src="./img/spain-flag.png"
-          alt="Español"
-          onclick="langChange('es')"
-          class="class_flag"
-          style="width: 60px; margin-right: 10px"
-        />
-
-        <img
-          id="englishFlag"
-          src="./img/uk-flag.png"
-          alt="English"
-          onclick="langChange('en')"
-          class="class_flag"
-          style="width: 60px; margin-right: 10px"
-        />
+    <header class="topbar">
+      <div class="brand">
+        <span class="window-dots" aria-hidden="true">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </span>
+        <span>Portafolio Hernando Ramirez</span>
       </div>
-
-      <div>
-        <img
-          src="./img/foto-hrp-web.png"
-          alt="Mi foto"
-          class="class_foto-hrp-web"
-        />
-      </div>
-
-      <!--    <header> -->
-      <h1>Hernando Ramirez P.</h1>
-      <h2 id="id_h3_position_mp"></h2>
-      <p id="id_h3_overview_mp"></p>
+      <nav class="language" aria-label="Selector de idioma">
+        <button id="spanishFlag" class="active" type="button" onclick="langChange('es')">ES</button>
+        <button id="englishFlag" type="button" onclick="langChange('en')">EN</button>
+      </nav>
     </header>
 
+    <section class="hero">
+      <div>
+        <img class="hero-photo" src="./img/foto-hrp-web.png" alt="Foto de Hernando Ramirez" />
+        <h1>¡Hola! soy Hernando Ramirez P.</h1>
+        <p id="id_h3_overview_mp"></p>
+      </div>
+    </section>
+
     <main>
-      <div class="class_detail">
-        <section id="skills">
+      <div class="toolbar">
+        <h2 id="id_categories_title">Explora mi perfil por categorías</h2>
+        <input
+          id="id_search_mp"
+          class="search"
+          type="search"
+          value=""
+          aria-label="Buscar"
+          readonly
+        />
+      </div>
+
+      <section class="categories" aria-label="Categorías del portafolio">
+        <article class="category active" onclick="skillLanguage()" tabindex="0">
+          <div class="icon blue">01</div>
           <h3 id="id_h3_skills_mp"></h3>
           <p id="id_p_skills_mp"></p>
-          <button
-            id="id_button_skills_mp"
-            class="class_button_know_more"
-            onclick="skillLanguage()"
-          ></button>
-        </section>
-
-        <section id="experience">
+          <div class="meta"><span id="id_button_skills_mp"></span><span>›</span></div>
+        </article>
+        <article class="category" onclick="experience()" tabindex="0">
+          <div class="icon green">02</div>
           <h3 id="id_h3_experience_mp"></h3>
           <p id="id_p_experience_mp"></p>
-          <button
-            id="id_button_experience_mp"
-            class="class_button_know_more"
-            onclick="experience()"
-          ></button>
-        </section>
-
-        <section id="certifications">
+          <div class="meta"><span id="id_button_experience_mp"></span><span>›</span></div>
+        </article>
+        <article class="category" onclick="certifications()" tabindex="0">
+          <div class="icon violet">03</div>
           <h3 id="id_h3_certifications_mp"></h3>
           <p id="id_p_certifications_mp"></p>
-          <button
-            id="id_button_certifications_mp"
-            class="class_button_know_more"
-            onclick="certifications()"
-          ></button>
-        </section>
-
-        <section id="experience_no_sap">
-          <h3 id="id_h3_experience_no_sap_mp"></h3>
-          <p id="id_p_experience_no_sap_mp"></p>
-          <button
-            id="id_button_experience_no_sap_mp"
-            class="class_button_know_more"
-            onclick="experience_no_sap()"
-          ></button>
-        </section>
-
-        <section id="education">
+          <div class="meta"><span id="id_button_certifications_mp"></span><span>›</span></div>
+        </article>
+        <article class="category" onclick="education()" tabindex="0">
+          <div class="icon orange">04</div>
           <h3 id="id_h3_education_mp"></h3>
           <p id="id_p_education_mp"></p>
-          <button
-            id="id_button_education_mp"
-            class="class_button_know_more"
-            onclick="education()"
-          ></button>
-        </section>
-
-        <section id="contact">
+          <div class="meta"><span id="id_button_education_mp"></span><span>›</span></div>
+        </article>
+        <article class="category" onclick="contactFocus()" tabindex="0">
+          <div class="icon slate">05</div>
           <h3 id="id_h3_contact_mp"></h3>
           <p id="id_p_contact_mp"></p>
-          <ul>
-            <li>
-              <img src="./img/telephone.jpg" width="20px"/>
-              <strong id="id_p_tele_mp"></strong></li>
-            <li>
-              <img src="./img/yahoo.png" width="20px"/>
-              <strong>Email:</strong> hramirezpa@yahoo.com</li>
-            <li>
-              <img src="./img/linkedin.png" width="20px"/>
-              <strong>LinkedIn:</strong>
-              <a 
-                href="https://www.linkedin.com/in/hernando-ramirez-2648b921"
-                target="_blank"
-                >linkedin.com/in/hr</a
-              >
-            </li>
-          </ul>
-        </section>
+          <div class="meta"><span id="id_button_contact_mp"></span><span>›</span></div>
+        </article>
+      </section>
 
+      <section class="panel" id="skills">
+        <h2 id="id_panel_skills_title">Habilidades</h2>
+        <p id="id_panel_skills_text"></p>
+        <div class="chips">
+          <span class="chip">SAP ABAP S/4HANA</span>
+          <span class="chip">ABAP Cloud</span>
+          <span class="chip">SAP HXM / HCM</span>
+          <span class="chip">Asistentes de IA</span>
+          <span class="chip">Inglés B1</span>
+        </div>
+      </section>
+
+      <div class="featured-head">
+        <h2 id="id_featured_title">Registros destacados de experiencia</h2>
+        <a href="./blog.html?lang=es" id="id_featured_all">Ver todos</a>
       </div>
+
+      <section class="records" aria-label="Registros destacados">
+        <article class="record" onclick="experience()" tabindex="0">
+          <div class="doc-icon" aria-hidden="true"></div>
+          <div>
+            <h3 id="id_record_hxm_title">Consultoría SAP HXM</h3>
+            <p id="id_record_hxm_text"></p>
+          </div>
+          <strong>›</strong>
+        </article>
+        <article class="record" onclick="skillLanguage()" tabindex="0">
+          <div class="doc-icon" aria-hidden="true"></div>
+          <div>
+            <h3 id="id_record_abap_title">Desarrollo ABAP</h3>
+            <p id="id_record_abap_text"></p>
+          </div>
+          <strong>›</strong>
+        </article>
+        <article class="record" onclick="certifications()" tabindex="0">
+          <div class="doc-icon" aria-hidden="true"></div>
+          <div>
+            <h3 id="id_record_cert_title">Certificaciones SAP</h3>
+            <p id="id_record_cert_text"></p>
+          </div>
+          <strong>›</strong>
+        </article>
+        <article class="record" onclick="experience_no_sap()" tabindex="0">
+          <div class="doc-icon" aria-hidden="true"></div>
+          <div>
+            <h3 id="id_record_non_sap_title">Experiencia no SAP</h3>
+            <p id="id_record_non_sap_text"></p>
+          </div>
+          <strong>›</strong>
+        </article>
+      </section>
+
+      <section class="detail" id="contact">
+        <h2 id="id_h3_position_mp">Consultor SAP ABAP S/4HANA - HXM</h2>
+        <div class="detail-box">
+          <h3 id="id_detail_title">Ficha profesional</h3>
+          <dl>
+            <dt id="id_detail_profile_label">Perfil</dt>
+            <dd id="id_detail_profile_text"></dd>
+            <dt id="id_detail_specialty_label">Especialidad</dt>
+            <dd id="id_detail_specialty_text"></dd>
+            <dt id="id_detail_experience_label">Experiencia</dt>
+            <dd id="id_detail_experience_text"></dd>
+            <dt id="id_detail_contact_label">Contacto</dt>
+            <dd>
+              <span id="id_p_tele_mp"></span><br />
+              hramirezpa@yahoo.com ·
+              <a href="https://www.linkedin.com/in/hernando-ramirez-2648b921" target="_blank" rel="noreferrer">
+                linkedin.com/in/hr
+              </a>
+            </dd>
+          </dl>
+        </div>
+      </section>
     </main>
-    <footer class="class_footer_blog">
-      <p onclick="blog()">Blog Hernando R.</p>
-      <ul class="class_social_media"> 
-    </footer>    
-    <footer class="class_footer_dr">
-      <p>© Derechos reservados 2023</p>
-      <ul class="class_social_media"> 
-    </footer>        
+
+    <a class="news-dock" href="https://nandu2023.github.io/Portafolio/noticiasABAP_AI.html">
+      <span class="news-dock__inner">
+        <span>
+          <h2 id="id_news_title">Noticias ABAP/AI</h2>
+          <p id="id_news_text">
+            Aqui se encuentran las noticias mas recientes de la Tecnologia, orientadas a AI, ABAP y Learning.
+          </p>
+        </span>
+        <span class="news-dock__arrow" aria-hidden="true">›</span>
+      </span>
+    </a>
+
     <script src="./script/script_index.js"></script>
   </body>
 </html>
