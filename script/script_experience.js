@@ -6,6 +6,58 @@ const icons = [
   '<path d="M12 21s8-4 8-11V5l-8-3-8 3v5c0 7 8 11 8 11Z" />',
 ];
 
+const mqaProjectsEs = [
+  ["Mesa de ayuda MQA - Cierre proyectos", "Duración: Actual · Industria: Varios · Rol: Soporte ABAP y HCM · Proyecto: N/A · Tipo: N/A"],
+  ["Proquinal", "Duración: Julio 2024 - mayo 2026 · Industria: Petroquímico y Textil · Rol: Desarrollador ABAP Cloud S/4 HANA / Consultor SAP Integration Suite (CPI) · Proyecto: EASI · Tipo: Desarrollo y ajustes ABAP"],
+  ["Albateq", "Duración: Marzo 2024 - Junio 2024 · Industria: Productora de alimentos · Rol: Desarrollador ABAP S/4 HANA / Consultor SAP CPI · Proyecto: Agesia · Tipo: Desarrollo y ajustes ABAP"],
+  ["Ramo", "Duración: Febrero 2024 - Marzo 2024 · Industria: Productora de alimentos · Rol: Desarrollador ABAP S/4 HANA · Proyecto: N/A · Tipo: Implementación SAP Concur"],
+  ["Mesa de ayuda MQA - Cierre proyectos", "Duración: Febrero 2023 - Enero 2024 · Industria: Varios · Rol: Soporte ABAP y HCM · Proyecto: N/A · Tipo: Soporte y ajustes ABAP y HCM"],
+  ["Granos y Cereales", "Duración: Agosto 2022 - Enero 2023 · Industria: Productora de alimentos · Rol: Desarrollador ABAP S/4 HANA - Consultor PT · Proyecto: Cronos · Tipo: Implementación nómina"],
+  ["Mesa de ayuda MQA - Cierre proyectos", "Duración: Julio 2022 - Julio 2022 · Industria: Varios · Rol: Soporte ABAP y HCM · Proyecto: N/A · Tipo: N/A"],
+  ["Grupo Uribe", "Duración: Enero 2020 - Junio 2022 · Industria: Comercializadora · Rol: Desarrollador ABAP S/4 HANA · Proyecto: Indigo · Tipo: Implementación SAP"],
+  ["Mesa de ayuda MQA - Cierre proyectos", "Duración: Enero 2020 - Abril 2020 · Industria: Varios · Rol: Soporte ABAP y HCM · Proyecto: N/A · Tipo: N/A"],
+  ["Constructora Jaramillo Mora", "Duración: Enero 2019 - Diciembre 2019 · Industria: Constructora · Rol: Desarrollador ABAP S/4 HANA · Proyecto: Constructora Jaramillo Mora · Tipo: Implementación vertical de construcción"],
+  ["Mesa de ayuda MQA", "Duración: Junio 2018 - Diciembre 2018 · Industria: Varios · Rol: ABAP y HCM · Proyecto: N/A · Tipo: N/A"],
+  ["CO&TEX", "Duración: Septiembre 2017 - Mayo 2018 · Industria: Manufactura de ropa · Rol: Desarrollador ABAP/Consultor HXM ECC Versión 6.8 · Proyecto: Enlace · Tipo: Implementación SAP"],
+  ["Mesa de ayuda MQA", "Duración: Junio 2017 - Agosto 2017 · Industria: Varios · Rol: ABAP y HCM · Proyecto: N/A · Tipo: N/A"],
+  ["TRIADA", "Duración: Octubre 2016 - Mayo 2017 · Industria: Construcción de vivienda · Rol: Desarrollador ABAP HXM ECC Versión 6.4 · Proyecto: TRIADA · Tipo: Implementación SAP y vertical de construcción"],
+  ["La Santé - Grupo Carval", "Duración: Julio 2016 - Agosto 2016 · Industria: Farmacéutica · Rol: ABAP HCM ECC Versión 6.4 · Proyecto: N/A · Tipo: Desarrollos y ajustes ABAP"],
+  ["Texmoda - Perú", "Duración: Diciembre 2015 - Julio 2016 · Industria: Comercializadora · Rol: ABAP HCM / Implementación módulo Gestión de tiempos de HCM ECC Versión 6.4 · Proyecto: N/A · Tipo: Implementación del módulo PT y desarrollos ABAP"],
+  ["Sempertex", "Duración: Mayo 2013 - Septiembre 2013 · Industria: Producción de globos y comercializadora · Rol: ABAP / ERP ECC Versión 6.4 · Proyecto: Sempertex · Tipo: Implementación SAP"],
+  ["TRENACO", "Duración: Mayo 2013 · Industria: Compra y venta de carbón y petróleo · Rol: ABAP / ERP · Proyecto: N/A · Tipo: Levantamiento información"],
+];
+
+const actualisapProjectsEs = [
+  ["CNR - Colombian Natural Resources", "Duración: Noviembre 2012 hasta abril 2013 · Industria: Minera · Rol: ABAP - ERP · Proyecto: CNR - Colombian Natural Resources · Tipo: Desarrollos y ajustes ABAP"],
+  ["TERRANVM", "Duración: Agosto 2012 hasta Noviembre 2012 · Industria: Servicios inmobiliarios · Rol: ABAP HCM · Proyecto: N/A · Tipo: Desarrollos y ajustes ABAP"],
+  ["Transportes Joalco S.A.", "Duración: Agosto 2012 hasta Noviembre 2012 · Industria: Transportes · Rol: ABAP HCM / ERP · Proyecto: Transportes Joalco S.A. · Tipo: Desarrollos y ajustes ABAP"],
+];
+
+const consultoriaProjectsEs = [
+  ["Universidad CES", "Duración: Marzo de 2012 hasta Agosto 2012 · Industria: Educación · Rol: ABAP · Proyecto: Universidad CES · Tipo: Desarrollos y ajustes ABAP"],
+  ["Universidad de los Andes", "Duración: Octubre de 2011 hasta Febrero 2012 · Industria: Educación · Rol: ABAP · Proyecto: Universidad de los Andes · Tipo: Desarrollos y ajustes ABAP"],
+  ["PREBEL", "Duración: Septiembre de 2011 hasta Octubre 2011 · Industria: Comercialización / Producción · Rol: ABAP · Proyecto: N/A · Tipo: Desarrollos y ajustes ABAP"],
+];
+
+const netpartnersProjectsEs = [
+  ["Ecopetrol", "Duración: Julio de 2011 hasta Julio 2011 · Industria: Petrolera · Rol: Consultor HCM/SAP - ABAP · Proyecto: N/A · Tipo: Ajustes ABAP"],
+  ["Ingenio Incauca y Providencia", "Duración: Enero de 2011 hasta Junio 2011 · Industria: Producción alcohol e ingenio azucarero · Rol: Consultor junior PY · Proyecto: N/A · Tipo: Implementación de módulos OM PA CM PT SP"],
+];
+
+const tecnoProjectsEs = [
+  ["COMFENALCO", "Duración: Marzo de 2010 hasta Diciembre 2010 · Industria: Servicios · Rol: Consultor PT desarrollador ABAP HCM - PT · Proyecto: Implementación de módulo PT · Tipo: Implementación de módulo PT"],
+  ["INTERQUIM", "Duración: Febrero de 2010 hasta Febrero de 2010 · Industria: Industria química · Rol: Desarrollador ABAP HCM/SAP · Proyecto: Desarrollo de programas ABAP HCM · Tipo: Desarrollo de programas"],
+  ["INTERQUIMEC", "Duración: Enero de 2010 hasta Enero de 2010 · Industria: Industria química · Rol: Consultor HCM/SAP · Proyecto: Soporte Salida en vivo · Tipo: Soporte"],
+  ["ECOPETROL", "Duración: Noviembre 2009 hasta Diciembre 2009 · Industria: Petrolera · Rol: Consultor PT · Proyecto: Ajuste del sistema de Gestión de Tiempos · Tipo: Soporte"],
+  ["GOODYEAR", "Duración: Diciembre de 2008 hasta Septiembre 2009 · Industria: Producción de llantas · Rol: Consultor HCM/SAP PT e incentivos, desarrollador ABAP Para Incentivos · Proyecto: N/A · Tipo: Actualización"],
+  ["ECOPETROL", "Duración: Julio de 2008 hasta Noviembre 2008 · Industria: Petrolera · Rol: Desarrollador ABAP HCM/SAP, consultor PT Y PA · Proyecto: N/A · Tipo: Soporte"],
+  ["UNIDELCA", "Duración: Julio de 2008 · Industria: Casino · Rol: Consultor HCM/SAP · Proyecto: N/A · Tipo: Soporte"],
+  ["Clínica Palermo", "Duración: Mayo de 2008 hasta Junio 2008 · Industria: Servicios Médicos · Rol: Consultor HCM/SAP · Proyecto: N/A · Tipo: Soporte"],
+  ["Smurfit Cartón de Colombia", "Duración: Febrero de 2007 hasta Abril 2008 · Industria: Producción · Rol: Consultor/Desarrollador HCM · Proyecto: N/A · Tipo: Implementación"],
+  ["Conconcreto", "Duración: Julio de 2006 hasta Diciembre 2006 · Industria: Construcción · Rol: Consultor/Desarrollador HCM · Proyecto: N/A · Tipo: Implementación"],
+  ["Help desk SAP", "Duración: Noviembre de 2005 al Junio 2006 · Industria: Construcción · Rol: Consultor/Desarrollador HCM · Proyecto: N/A · Tipo: Soporte a clientes"],
+];
+
 const content = {
   es: {
     htmlLang: "es",
@@ -16,285 +68,75 @@ const content = {
     viewDetail: "Ver detalle",
     home: "← Inicio",
     focusTitle: "Foco del rol",
-    projectsTitle: "Proyectos y aportes representativos",
+    projectsTitle: "Registros cronológicos del documento",
     tagsLabel: "Areas clave",
     experiences: [
       {
         company: "MQA Business Consultants",
         period: "Mayo 2013 - Actual",
-        role: "Consultor SAP ABAP / HCM / HXM",
-        summary: "Proyectos SAP, mesa de ayuda, desarrollos ABAP y soporte HCM.",
+        role: "Soporte, desarrollo ABAP, HCM/HXM, S/4HANA, ABAP Cloud e Integration Suite",
+        summary: "Registros desde soporte MQA actual hasta proyectos 2013.",
         focus:
-          "Participación en proyectos de implementación, soporte y evolución de soluciones SAP para clientes de diferentes industrias, con énfasis en ABAP, HCM, gestión de tiempos, nómina, integraciones y ajustes funcionales.",
-        projects: [
-          {
-            name: "Granos y Cereales",
-            text:
-              "Desarrollos y ajustes ABAP S/4HANA, BADI contable, prima de antigüedad, ampliación de infotipo 0050 e integraciones de marcaciones a nómina.",
-          },
-          {
-            name: "Grupo Uribe",
-            text:
-              "Volantes de pago, certificado laboral, integraciones con CAR, formatos MM, reportes MM/PP, interfaces proxy y reportes FI.",
-          },
-          {
-            name: "CO&TEX / TEXMODA",
-            text:
-              "Implementación de PA y PT, reglas de tiempos, festivos, absentismos, presencias, suplencias, horas extras, vacaciones y reportes de nómina.",
-          },
-          {
-            name: "Constructora Jaramillo Mora / Triada",
-            text:
-              "Ajustes ABAP para PS, control presupuestal, Easy Cost Planning, órdenes de cambio, APU, planeación de recursos y reportes ALV.",
-          },
-        ],
-        tags: ["ABAP", "S/4HANA", "SAP HCM", "PT / PY", "Integraciones"],
+          "Etapa más reciente, con soporte ABAP/HCM, desarrollos S/4HANA, ABAP Cloud, SAP Integration Suite/CPI, implementación SAP Concur, PT, nómina y verticales de construcción. El orden de los registros respeta el documento fuente.",
+        projects: mqaProjectsEs.map(([name, text]) => ({ name, text })),
+        tags: ["ABAP", "ABAP Cloud", "S/4HANA", "SAP CPI", "HCM/HXM", "PT/PY"],
       },
       {
         company: "Actualisap Consultores SAS",
         period: "Agosto 2012 - Mayo 2013",
         role: "Consultor ABAP HCM / ERP",
-        summary: "Desarrollos de nómina, reportes HCM e integración contable.",
+        summary: "Minería, servicios inmobiliarios y transporte.",
         focus:
-          "Desarrollo y ajuste de soluciones ABAP HCM para procesos de nómina, prenómina, reportes laborales, dispersión bancaria e integración nómina-contabilidad.",
-        projects: [
-          {
-            name: "Terranvm",
-            text:
-              "Volantes de pago, reportes de prenómina, dispersión de nómina, comparativo devengos vs. deducciones y extracción de datos para SuccessFactors.",
-          },
-          {
-            name: "Transportes Joalco S.A.",
-            text:
-              "Certificados laborales, hoja de vida, prima de antigüedad, transferencia bancaria, BADI de integración contable y ajustes para SD/MM/PM.",
-          },
-        ],
-        tags: ["ABAP HCM", "Nómina", "Reportes", "BADI", "SuccessFactors"],
+          "Desarrollos y ajustes ABAP para clientes de minería, servicios inmobiliarios y transporte, manteniendo el orden indicado en el archivo de experiencia.",
+        projects: actualisapProjectsEs.map(([name, text]) => ({ name, text })),
+        tags: ["ABAP", "ERP", "HCM", "Reportes", "Ajustes"],
       },
       {
         company: "Consultoría Organizacional",
         period: "Septiembre 2011 - Agosto 2012",
         role: "Consultor ABAP",
-        summary: "Desarrollos ABAP para educación, contratación e interfaces.",
+        summary: "Educación, interfaces, formularios y desarrollos ABAP.",
         focus:
-          "Construcción de desarrollos ABAP para instituciones educativas y compañías de producción, incluyendo formularios, cargas, contratos, interfaces y ajustes de reportes.",
-        projects: [
-          {
-            name: "Universidad CES",
-            text:
-              "Comprobantes de pago, liquidación de prestaciones en HRFORMS, programas de cargue HCM, contratos laborales y formularios tributarios.",
-          },
-          {
-            name: "Universidad de los Andes",
-            text:
-              "Adobe Forms, infotipo 0416, batch input, interfaces de contratación y reingreso, web services, proxy PI, tablas, vistas y ampliaciones.",
-          },
-          {
-            name: "Prebel",
-            text:
-              "Interfaz para cargue de archivos planos a nómina y ajustes de smartforms para colilla de pago.",
-          },
-        ],
-        tags: ["ABAP", "HRFORMS", "Adobe Forms", "PI", "Interfaces"],
+          "Desarrollos ABAP para instituciones educativas y compañías de comercialización/producción, con formularios, cargas, interfaces y ajustes.",
+        projects: consultoriaProjectsEs.map(([name, text]) => ({ name, text })),
+        tags: ["ABAP", "Educación", "Interfaces", "Formularios"],
       },
       {
         company: "Netpartners / HR Solutions",
         period: "Enero 2011 - Julio 2011",
-        role: "Consultor HCM / ABAP / PY",
-        summary: "Soporte SAP HCM, gestión de tiempos y configuración PY.",
+        role: "Consultor HCM / SAP ABAP / PY",
+        summary: "Soporte HCM, ajustes ABAP e implementación PY.",
         focus:
-          "Soporte a requerimientos SAP HCM y participación en procesos de nómina, especificaciones funcionales, configuración básica y acompañamiento a usuarios.",
-        projects: [
-          {
-            name: "Ecopetrol",
-            text:
-              "Solución de requerimientos SAP en gestión de tiempos, gestión de personal, queries y ABAP.",
-          },
-          {
-            name: "Ingenio Incauca y Providencia",
-            text:
-              "BBP de cálculo de nómina, especificaciones funcionales, configuración de divisor 30, absentismos, conceptos de cálculo, esquemas y reglas estándar.",
-          },
-        ],
-        tags: ["SAP HCM", "PY", "PT", "ABAP", "Soporte"],
+          "Soporte y consultoría SAP HCM/ABAP, con participación en ajustes ABAP e implementación de módulos de HCM y nómina.",
+        projects: netpartnersProjectsEs.map(([name, text]) => ({ name, text })),
+        tags: ["SAP HCM", "ABAP", "PY", "PT", "Soporte"],
       },
       {
         company: "Tecnoinformática Latinoamérica S.A.",
         period: "Noviembre 2005 - Diciembre 2010",
-        role: "Consultor HCM / SAP ABAP",
-        summary: "Implementaciones HCM, gestión de tiempos, nómina y soporte.",
+        role: "Consultor / Desarrollador HCM y ABAP",
+        summary: "Implementaciones HCM, PT, soporte y desarrollos ABAP.",
         focus:
-          "Implementación y soporte de módulos HCM con participación en PT, PA, PY, reportes ABAP, capacitación a usuarios y estabilización de procesos productivos.",
-        projects: [
-          {
-            name: "Comfenalco",
-            text:
-              "Implementación del módulo PT para múltiples unidades de negocio, planes de horario, calendarios de festivos, evaluación de tiempos y planificación de turnos.",
-          },
-          {
-            name: "Goodyear",
-            text:
-              "Implementación de PT, definición de horarios, contingentes, módulo de incentivos personalizado, cargue de datos y capacitación a usuarios líderes.",
-          },
-          {
-            name: "Smurfit Cartón de Colombia / Conconcreto",
-            text:
-              "Implementaciones OM, PA, CM, PT y SP, reportes estándar, contratos, planillas de pago, comprobantes, PDFs y envíos por correo.",
-          },
-          {
-            name: "Help Desk SAP",
-            text:
-              "Soporte a usuarios en PA, OM, PT, PY y ABAP para clientes como Henkel, Petrobras, Propilco, Cámara de Comercio de Bogotá, Holcim y universidades.",
-          },
-        ],
+          "Etapa inicial SAP con implementación de módulos HCM, gestión de tiempos, desarrollos ABAP HCM, soporte de salida en vivo y atención a clientes.",
+        projects: tecnoProjectsEs.map(([name, text]) => ({ name, text })),
         tags: ["SAP HCM", "PT", "PA", "PY", "ABAP", "Soporte"],
       },
     ],
   },
-  en: {
-    htmlLang: "en",
-    subtitle: "SAP ABAP / HXM Consultant",
-    profileLabel: "Professional journey",
-    title: "SAP Experience",
-    featured: "Featured stages",
-    viewDetail: "View detail",
-    home: "← Home",
-    focusTitle: "Role focus",
-    projectsTitle: "Representative projects and contributions",
-    tagsLabel: "Key areas",
-    experiences: [
-      {
-        company: "MQA Business Consultants",
-        period: "May 2013 - Present",
-        role: "SAP ABAP / HCM / HXM Consultant",
-        summary: "SAP projects, help desk, ABAP development, and HCM support.",
-        focus:
-          "Participation in SAP implementation, support, and solution improvement projects for clients across industries, focused on ABAP, HCM, time management, payroll, integrations, and functional adjustments.",
-        projects: [
-          {
-            name: "Granos y Cereales",
-            text:
-              "ABAP S/4HANA developments and adjustments, accounting BADI, seniority bonus, infotype 0050 extension, and time-clock integrations into payroll.",
-          },
-          {
-            name: "Grupo Uribe",
-            text:
-              "Payslips, employment certificates, CAR integrations, MM formats, MM/PP reports, proxy interfaces, and FI reports.",
-          },
-          {
-            name: "CO&TEX / TEXMODA",
-            text:
-              "PA and PT implementation, time rules, holidays, absences, attendances, substitutions, overtime, vacations, and payroll reports.",
-          },
-          {
-            name: "Constructora Jaramillo Mora / Triada",
-            text:
-              "ABAP adjustments for PS, budget control, Easy Cost Planning, change orders, APU, resource planning, and ALV reports.",
-          },
-        ],
-        tags: ["ABAP", "S/4HANA", "SAP HCM", "PT / PY", "Integrations"],
-      },
-      {
-        company: "Actualisap Consultores SAS",
-        period: "August 2012 - May 2013",
-        role: "ABAP HCM / ERP Consultant",
-        summary: "Payroll developments, HCM reports, and accounting integration.",
-        focus:
-          "Development and adjustment of ABAP HCM solutions for payroll, pre-payroll, labor reports, bank dispersion, and payroll-accounting integration.",
-        projects: [
-          {
-            name: "Terranvm",
-            text:
-              "Payslips, pre-payroll reports, payroll dispersion, earnings vs. deductions comparison, and SuccessFactors data extraction.",
-          },
-          {
-            name: "Transportes Joalco S.A.",
-            text:
-              "Employment certificates, resume report, seniority bonus, bank transfer, accounting integration BADI, and SD/MM/PM adjustments.",
-          },
-        ],
-        tags: ["ABAP HCM", "Payroll", "Reports", "BADI", "SuccessFactors"],
-      },
-      {
-        company: "Consultoría Organizacional",
-        period: "September 2011 - August 2012",
-        role: "ABAP Consultant",
-        summary: "ABAP developments for education, hiring, and interfaces.",
-        focus:
-          "ABAP developments for education institutions and production companies, including forms, data loads, employment contracts, interfaces, and report adjustments.",
-        projects: [
-          {
-            name: "Universidad CES",
-            text:
-              "Payslips, severance settlement in HRFORMS, HCM upload programs, employment contracts, and tax forms.",
-          },
-          {
-            name: "Universidad de los Andes",
-            text:
-              "Adobe Forms, infotype 0416, batch input, hiring and re-entry interfaces, web services, PI proxy, tables, views, and enhancements.",
-          },
-          {
-            name: "Prebel",
-            text:
-              "Interface for payroll flat-file uploads and smartform adjustments for payslips.",
-          },
-        ],
-        tags: ["ABAP", "HRFORMS", "Adobe Forms", "PI", "Interfaces"],
-      },
-      {
-        company: "Netpartners / HR Solutions",
-        period: "January 2011 - July 2011",
-        role: "HCM / ABAP / PY Consultant",
-        summary: "SAP HCM support, time management, and PY configuration.",
-        focus:
-          "Support for SAP HCM requirements and participation in payroll processes, functional specifications, basic configuration, and user support.",
-        projects: [
-          {
-            name: "Ecopetrol",
-            text:
-              "SAP requirements support in time management, personnel management, queries, and ABAP.",
-          },
-          {
-            name: "Ingenio Incauca y Providencia",
-            text:
-              "Payroll calculation BBP, functional specifications, divisor 30 configuration, absences, calculation concepts, schemas, and standard rules.",
-          },
-        ],
-        tags: ["SAP HCM", "PY", "PT", "ABAP", "Support"],
-      },
-      {
-        company: "Tecnoinformática Latinoamérica S.A.",
-        period: "November 2005 - December 2010",
-        role: "HCM / SAP ABAP Consultant",
-        summary: "HCM implementations, time management, payroll, and support.",
-        focus:
-          "Implementation and support of HCM modules with participation in PT, PA, PY, ABAP reports, user training, and stabilization of production processes.",
-        projects: [
-          {
-            name: "Comfenalco",
-            text:
-              "PT implementation for multiple business units, work schedules, holiday calendars, time evaluation, and shift planning.",
-          },
-          {
-            name: "Goodyear",
-            text:
-              "PT implementation, work schedule definition, quotas, custom incentives module, data uploads, and key-user training.",
-          },
-          {
-            name: "Smurfit Cartón de Colombia / Conconcreto",
-            text:
-              "OM, PA, CM, PT, and SP implementations, standard reports, contracts, payment sheets, payslips, PDFs, and email delivery.",
-          },
-          {
-            name: "SAP Help Desk",
-            text:
-              "User support in PA, OM, PT, PY, and ABAP for clients such as Henkel, Petrobras, Propilco, Bogotá Chamber of Commerce, Holcim, and universities.",
-          },
-        ],
-        tags: ["SAP HCM", "PT", "PA", "PY", "ABAP", "Support"],
-      },
-    ],
-  },
+};
+
+content.en = {
+  ...content.es,
+  htmlLang: "en",
+  subtitle: "SAP ABAP / HXM Consultant",
+  profileLabel: "Professional journey",
+  title: "SAP Experience",
+  featured: "Featured stages",
+  viewDetail: "View detail",
+  home: "← Home",
+  focusTitle: "Role focus",
+  projectsTitle: "Chronological records from the source document",
+  tagsLabel: "Key areas",
 };
 
 let currentLanguage = getLanguage();
