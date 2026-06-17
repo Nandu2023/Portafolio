@@ -6,7 +6,7 @@ const copy = {
     search: "Buscar experiencia, SAP, ABAP, certificaciones...",
     categoriesTitle: "Explora mi perfil por categorías",
     overview:
-      "Apasionado del desarrollo ABAP Cloud S/4HANA apoyado de asistentes de IA y la consultoría SAP en HXM. Con 20+ años de experiencia, soy experto en análisis, desarrollo de proyectos y resolución de casos. Me destaco por dejar huella en clientes y superar expectativas. Busco constantemente mejorar y marcar la diferencia en el campo SAP.",
+      "Apasionado del desarrollo ABAP Cloud S/4HANA apoyado de asistentes de IA y la consultoría SAP en HXM. Con 18+ años de experiencia, soy experto en análisis, desarrollo de proyectos y resolución de casos. Me destaco por dejar huella en clientes y superar expectativas. Busco constantemente mejorar y marcar la diferencia en el campo SAP.",
     position: "Consultor SAP ABAP S/4HANA - HXM",
     more: "Conocer mas...",
     skillsTitle: "Habilidades",
