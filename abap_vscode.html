@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Implementación de ABAP Development Tools for VS Code</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #eef4f8;
+      --panel: #ffffff;
+      --panel-soft: #f7fafc;
+      --text: #111827;
+      --muted: #64748b;
+      --line: #d9e2ea;
+      --blue: #2563eb;
+      --teal: #12a077;
+      --violet: #6f55bd;
+      --amber: #ef8f21;
+      --shadow: 0 18px 40px rgba(15, 23, 42, .13);
+      --radius: 8px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.88), rgba(238,244,248,.94)),
+        radial-gradient(circle at 20% 8%, rgba(37,99,235,.08), transparent 30%),
+        var(--bg);
+      color: var(--text);
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; }
+    .shell {
+      width: min(1180px, calc(100% - 32px));
+      margin: 36px auto;
+      overflow: hidden;
+      border: 1px solid rgba(148,163,184,.35);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      min-height: 76px;
+      padding: 0 28px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.94);
+      position: sticky;
+      top: 0;
+      z-index: 4;
+    }
+    .brand {
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .nav {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      gap: 8px;
+      align-self: stretch;
+      overflow-x: auto;
+    }
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 14px;
+      border-bottom: 3px solid transparent;
+      color: #334155;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .nav a:hover,
+    .nav a.active {
+      border-color: var(--blue);
+      color: #0f172a;
+    }
+    .hero {
+      padding: 58px 28px 48px;
+      border-bottom: 1px solid #e3edf5;
+      background: linear-gradient(180deg, rgba(234,245,252,.92), rgba(244,250,253,.98)), #edf7fc;
+      text-align: center;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0 auto 18px;
+      max-width: 860px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 28px;
+      color: #475569;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    .search {
+      position: relative;
+      width: min(700px, 100%);
+      margin: 0 auto;
+    }
+    .search input {
+      width: 100%;
+      min-height: 62px;
+      padding: 0 58px 0 24px;
+      border: 1px solid #cbd7e3;
+      border-radius: var(--radius);
+      background: #fff;
+      color: var(--text);
+      outline: none;
+      box-shadow: 0 8px 20px rgba(15,23,42,.05);
+    }
+    .search input:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 4px rgba(37,99,235,.12);
+    }
+    .search::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 22px;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #475569;
+      border-radius: 50%;
+      transform: translateY(-56%);
+    }
+    .search::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      width: 9px;
+      height: 2px;
+      background: #475569;
+      transform: translateY(9px) rotate(45deg);
+      z-index: 1;
+    }
+    .content {
+      padding: 28px 40px 56px;
+      background: #fff;
+    }
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin-bottom: 34px;
+    }
+    .card {
+      min-height: 190px;
+      padding: 24px 20px 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: #bfd0df;
+      box-shadow: 0 14px 24px rgba(15,23,42,.08);
+    }
+    .icon {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 26px;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 800;
+    }
+    .blue { background: var(--blue); }
+    .teal { background: var(--teal); }
+    .violet { background: var(--violet); }
+    .amber { background: var(--amber); }
+    .card h3 { margin: 0 0 8px; font-size: 15px; }
+    .card p {
+      min-height: 58px;
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .card a {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .guide-section {
+      margin-top: 26px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+    .section-headline {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+      margin-bottom: 18px;
+    }
+    .section-headline p {
+      margin: 4px 0 0;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .section-headline h2 {
+      margin: 0;
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+    .section-body {
+      width: min(900px, 100%);
+      margin-left: auto;
+    }
+    .section-body h3 {
+      margin: 24px 0 12px;
+      font-size: 17px;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 42px minmax(0,1fr);
+      gap: 14px;
+      align-items: start;
+      margin: 14px 0;
+      color: #334155;
+      line-height: 1.62;
+    }
+    .step span {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 28px;
+      border-radius: 8px;
+      background: #eff6ff;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .resource {
+      margin: 14px 0;
+      padding: 14px 16px;
+      border: 1px solid #cfe0ef;
+      border-left: 4px solid var(--teal);
+      border-radius: 8px;
+      background: #f8fbfd;
+      color: #0f766e;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .note {
+      margin: 16px 0;
+      padding: 14px 16px;
+      border: 1px solid #f3d6aa;
+      border-left: 4px solid var(--amber);
+      border-radius: 8px;
+      background: #fffaf2;
+      color: #7c4a03;
+      line-height: 1.55;
+    }
+    .code {
+      margin: 16px 0;
+      padding: 16px;
+      overflow-x: auto;
+      border: 1px solid #d7dee8;
+      border-radius: 8px;
+      background: #0f172a;
+      color: #e5edf7;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    figure {
+      margin: 18px 0 28px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f8fafc;
+      overflow: hidden;
+    }
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 680px;
+      object-fit: contain;
+      background: #fff;
+    }
+    figcaption {
+      padding: 12px 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .hidden { display: none !important; }
+    @media (max-width: 940px) {
+      .shell { width: min(100% - 20px, 1180px); margin: 10px auto; }
+      .topbar { flex-wrap: wrap; height: auto; padding: 16px; }
+      .brand { min-width: 0; }
+      .nav { order: 3; flex-basis: 100%; justify-content: flex-start; min-height: 42px; }
+      .content { padding: 24px 18px 40px; }
+      .cards { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
+      .section-headline { grid-template-columns: 1fr; gap: 8px; }
+      .section-body { margin-left: 0; }
+    }
+    @media (max-width: 620px) {
+      .hero { padding: 42px 18px 34px; }
+      .cards { grid-template-columns: 1fr; }
+      .card { min-height: 0; }
+      .card p { min-height: 0; }
+      .step { grid-template-columns: 1fr; gap: 8px; }
+      .step span { width: 38px; }
+      figure img { max-height: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./index.html">Portafolio SAP</a>
+      <nav class="nav" aria-label="Secciones de la guía">
+        <a href="#preparacion">Preparación</a>
+        <a href="#destination">Destination</a>
+        <a href="#workspace">Workspace</a>
+        <a href="#copilot">Copilot</a>
+        <a href="#recomendaciones">Recomendaciones</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">Guía visual de implementación</p>
+      <h1>Implementación de ABAP Development Tools for VS Code</h1>
+      <p>Configuración práctica para crear una destination ABAP en VS Code, agregarla al workspace, autenticar la conexión SAP y dejar el entorno listo para trabajar con GitHub Copilot.</p>
+      <div class="search">
+        <input id="guideSearch" type="search" placeholder="Buscar en la guía: destination, logon, Copilot, paquete..." aria-label="Buscar en la guía">
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="section-head"><h2>Explora por etapa de configuración</h2></div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon blue">1</div>
+          <h3>Preparar VS Code</h3>
+          <p>Abrir el folder de trabajo y acceder a la Command Palette para crear la conexión ABAP.</p>
+          <a class="step-link" href="#preparacion" data-target="preparacion">Ver pasos</a>
+        </article>
+        <article class="card">
+          <div class="icon teal">2</div>
+          <h3>Crear destination</h3>
+          <p>Seleccionar HTTP, ingresar la URL SAP y revisar la entrada generada en destinations.json.</p>
+          <a class="step-link" href="#destination" data-target="destination">Ver pasos</a>
+        </article>
+        <article class="card">
+          <div class="icon violet">3</div>
+          <h3>Conectar objetos</h3>
+          <p>Agregar la destination al workspace, hacer logon y cargar paquetes u objetos ABAP.</p>
+          <a class="step-link" href="#workspace" data-target="workspace">Ver pasos</a>
+        </article>
+      </div>
+
+      <section class="guide-section" id="preparacion" data-section="preparacion abrir folder command palette abap development tools">
+        <div class="section-headline">
+          <p>Guía paso a paso</p>
+          <h2>Preparación del workspace</h2>
+        </div>
+        <div class="section-body">
+          <p class="step"><span>01</span>Abrir Visual Studio Code y seleccionar el folder donde se va a trabajar con los objetos ABAP.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image1.png" alt="Pantalla inicial de VS Code para abrir el folder de trabajo" loading="lazy">
+            <figcaption>Inicio del flujo en VS Code para preparar el área de trabajo.</figcaption>
+          </figure>
+          <p class="step"><span>02</span>Abrir el folder desde VS Code para que la configuración quede asociada al workspace correcto.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image2.png" alt="Opción para abrir folder en VS Code" loading="lazy">
+            <figcaption>Acceso a la opción para abrir una carpeta de trabajo.</figcaption>
+          </figure>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image3.png" alt="Selección del folder de trabajo" loading="lazy">
+            <figcaption>Selección del directorio que contendrá la configuración del proyecto.</figcaption>
+          </figure>
+          <p class="step"><span>03</span>Desde el menú de VS Code ingresar a <strong>View -&gt; Command Palette</strong> y ejecutar el comando <strong>ABAP: New Destination</strong>.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image4.png" alt="Command Palette con el comando ABAP New Destination" loading="lazy">
+            <figcaption>Creación de una nueva destination desde la Command Palette.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="guide-section" id="destination" data-section="destination http url sap destinations json open destination settings">
+        <div class="section-headline">
+          <p>Conexión SAP</p>
+          <h2>Crear y revisar la destination ABAP</h2>
+        </div>
+        <div class="section-body">
+          <p class="step"><span>01</span>Cuando el asistente pregunte el tipo de conexión, seleccionar <strong>HTTP</strong>.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image5.png" alt="Selección del tipo de destination HTTP" loading="lazy">
+            <figcaption>Selección de HTTP como tipo de destination.</figcaption>
+          </figure>
+          <p class="step"><span>02</span>Ingresar la URL del sistema SAP. En el documento se usa una URL genérica como referencia.</p>
+          <pre class="code"><code>https://xxxxxxxx.sap.xxxxxx.group:44380</code></pre>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image6.png" alt="Ingreso de la URL SAP para la destination" loading="lazy">
+            <figcaption>Campo para registrar la URL del sistema SAP.</figcaption>
+          </figure>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image7.png" alt="Confirmación de la destination ABAP en VS Code" loading="lazy">
+            <figcaption>Confirmación de la configuración inicial de la destination.</figcaption>
+          </figure>
+          <p class="step"><span>03</span>La acción anterior agrega una entrada en el archivo <strong>destinations.json</strong>.</p>
+          <p class="step"><span>04</span>Para revisar el JSON generado, ejecutar el comando <strong>ABAP: Open Destination Settings (JSON)</strong>.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image8.png" alt="Archivo destinations.json con la destination creada" loading="lazy">
+            <figcaption>Archivo destinations.json con la entrada de conexión creada por ABAP Development Tools.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="guide-section" id="workspace" data-section="add destination folder workspace logon package objetos abap">
+        <div class="section-headline">
+          <p>Workspace ABAP</p>
+          <h2>Agregar la destination y autenticar</h2>
+        </div>
+        <div class="section-body">
+          <p class="step"><span>01</span>Para agregar objetos al workspace, ejecutar <strong>ABAP: Add Destination as Folder to Workspace</strong> y escoger la destination creada.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image9.png" alt="Selección de destination para agregarla al workspace" loading="lazy">
+            <figcaption>Selección de la destination que se agregará como carpeta del workspace.</figcaption>
+          </figure>
+          <p class="step"><span>02</span>Después de agregarla, la destination se visualiza en el explorador de VS Code.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image10.png" alt="Destination visible en el explorador de VS Code" loading="lazy">
+            <figcaption>Vista de la destination agregada al workspace.</figcaption>
+          </figure>
+          <p class="step"><span>03</span>Si aparece sin conexión, usar la opción <strong>Logon to destination</strong>.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image11.png" alt="Opción Logon to destination" loading="lazy">
+            <figcaption>Acceso al logon de la destination SAP.</figcaption>
+          </figure>
+          <p class="step"><span>04</span>El logon puede realizarse con cualquiera de las dos opciones disponibles en el flujo mostrado.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image12.png" alt="Opciones de autenticación para la destination" loading="lazy">
+            <figcaption>Opciones de autenticación para iniciar sesión en SAP.</figcaption>
+          </figure>
+          <p class="step"><span>05</span>Al completar el acceso, la destination queda disponible para navegar objetos ABAP.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image13.png" alt="Destination conectada en VS Code" loading="lazy">
+            <figcaption>Destination disponible después del logon correcto.</figcaption>
+          </figure>
+          <p class="step"><span>06</span>Estas son algunas opciones que se pueden ejecutar desde la Command Palette para trabajar con objetos y paquetes.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image14.png" alt="Opciones ABAP disponibles en la Command Palette" loading="lazy">
+            <figcaption>Comandos ABAP disponibles para continuar cargando objetos.</figcaption>
+          </figure>
+          <p class="step"><span>07</span>Para agregar un paquete como carpeta del workspace, ejecutar <strong>ABAP: Add Package as Folder to Workspace</strong>.</p>
+        </div>
+      </section>
+
+      <section class="guide-section" id="copilot" data-section="copilot prompt paquetes objetos tokens command palette">
+        <div class="section-headline">
+          <p>Asistencia IA</p>
+          <h2>Conectar Copilot y trabajar con objetos</h2>
+        </div>
+        <div class="section-body">
+          <p class="step"><span>01</span>Con la destination ya conectada, abrir GitHub Copilot en VS Code para solicitar ayuda sobre objetos ABAP del workspace.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image15.png" alt="Conexión de Copilot en VS Code" loading="lazy">
+            <figcaption>Inicio del trabajo con Copilot desde VS Code.</figcaption>
+          </figure>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image16.png" alt="Panel de Copilot integrado con VS Code" loading="lazy">
+            <figcaption>Panel de Copilot disponible para generar prompts sobre el proyecto.</figcaption>
+          </figure>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image17.png" alt="Objetos ABAP visibles para trabajar con Copilot" loading="lazy">
+            <figcaption>Objetos disponibles para consulta y generación de prompts.</figcaption>
+          </figure>
+          <p class="step"><span>02</span>Con esto ya se pueden mostrar objetos del sistema y generar el prompt que se requiera.</p>
+          <p class="note">Se puede agregar el paquete desde la Command Palette o mediante prompt. La recomendación práctica es usar la Command Palette cuando sea posible, porque hacerlo por prompt puede consumir muchos tokens.</p>
+          <figure>
+            <img src="./img/vsc-abap-development-tools/image18.png" alt="Referencia final del trabajo con paquete ABAP y Copilot" loading="lazy">
+            <figcaption>Referencia visual del flujo final de trabajo.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="guide-section" id="recomendaciones" data-section="recomendaciones problemas git node ide env vpn sap fiori webgui">
+        <div class="section-headline">
+          <p>Cierre operativo</p>
+          <h2>Recomendaciones finales y solución de problemas</h2>
+        </div>
+        <div class="section-body">
+          <p class="step"><span>01</span>Validar que Git, Node.js y el IDE estén instalados correctamente antes de clonar o preparar repositorios relacionados.</p>
+          <p class="step"><span>02</span>Ejecutar los comandos de instalación desde la carpeta correcta del proyecto.</p>
+          <p class="step"><span>03</span>Confirmar que el archivo <strong>.env</strong> exista en el directorio del repositorio cuando el flujo lo requiera, y que contenga valores válidos para el cliente SAP.</p>
+          <p class="step"><span>04</span>Verificar conectividad a la URL SAP desde el navegador antes de probar integraciones o asistentes.</p>
+          <p class="step"><span>05</span>Si el servidor MCP no inicia, revisar la salida de la terminal, reinstalar dependencias con <strong>npm install</strong> y volver a compilar con <strong>npm run build</strong>.</p>
+          <p class="step"><span>06</span>Si la herramienta no puede acceder a SAP, revisar VPN, credenciales, mandante, permisos del usuario y disponibilidad del servicio SAP GUI for HTML o Fiori.</p>
+          <p class="note">Evitar prompts que soliciten operaciones destructivas sin revisar primero el alcance de la acción.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const sections = Array.from(document.querySelectorAll('.guide-section'));
+    const navLinks = Array.from(document.querySelectorAll('.nav a'));
+    const searchInput = document.getElementById('guideSearch');
+
+    document.querySelectorAll('.step-link').forEach(link => {
+      link.addEventListener('click', event => {
+        const target = document.getElementById(link.dataset.target);
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', '#' + target.id);
+      });
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+        });
+      });
+    }, { rootMargin: '-25% 0px -70% 0px', threshold: 0 });
+
+    sections.forEach(section => observer.observe(section));
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.trim().toLowerCase();
+      sections.forEach(section => {
+        const text = `${section.dataset.section || ''} ${section.textContent}`.toLowerCase();
+        section.classList.toggle('hidden', query.length > 0 && !text.includes(query));
+      });
+    });
+  </script>
+</body>
+</html>
