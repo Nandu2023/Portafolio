@@ -478,6 +478,11 @@ main {
     min-height: 250px;
   }
 
+  .detail h2 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
   .news-dock__arrow {
     display: none;
   }
