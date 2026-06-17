@@ -45,7 +45,7 @@ const copy = {
       "Consultor orientado a resultados, soporte especializado y mejora continua.",
     specialtyLabel: "Especialidad",
     specialtyText:
-      "ABAP S/4HANA, HXM/HCM, análisis técnico, desarrollos y resolución de incidentes.",
+      "ABAP Cloud, Integration Suite, HXM/HCM, análisis técnico, desarrollos y resolución de incidentes.",
     experienceLabel: "Experiencia",
     experienceText:
       "20+ años en proyectos SAP, implementaciones y soporte a base instalada.",
@@ -98,7 +98,7 @@ const copy = {
       "Results-oriented consultant focused on specialized support and continuous improvement.",
     specialtyLabel: "Specialty",
     specialtyText:
-      "ABAP S/4HANA, HXM/HCM, technical analysis, developments and incident resolution.",
+      "ABAP Cloud, Integration Suite, HXM/HCM, technical analysis, developments and incident resolution.",
     experienceLabel: "Experience",
     experienceText:
       "20+ years in SAP projects, implementations and installed-base support.",
