@@ -7,55 +7,55 @@ const icons = [
 ];
 
 const mqaProjectsEs = [
-  ["Mesa de ayuda MQA - Cierre proyectos", "Duracion: Actual  -  Industria: Varios  -  Rol: Soporte ABAP y HCM  -  Proyecto: N/A  -  Tipo: N/A"],
-  ["Proquinal", "Duracion: Julio 2024 - mayo 2026  -  Industria: Petroquimico y Textil  -  Rol: Desarrollador ABAP Cloud S/4 HANA / Consultor SAP Integration Suite (CPI)  -  Proyecto: EASI  -  Tipo: Desarrollo y ajustes ABAP"],
-  ["Albateq", "Duracion: Marzo 2024 - Junio 2024  -  Industria: Productora de alimentos  -  Rol: Desarrollador ABAP S/4 HANA / Consultor SAP CPI  -  Proyecto: Agesia  -  Tipo: Desarrollo y ajustes ABAP"],
-  ["Ramo", "Duracion: Febrero 2024 - Marzo 2024  -  Industria: Productora de alimentos  -  Rol: Desarrollador ABAP S/4 HANA  -  Proyecto: N/A  -  Tipo: Implementacion SAP Concur"],
-  ["Mesa de ayuda MQA - Cierre proyectos", "Duracion: Febrero 2023 - Enero 2024  -  Industria: Varios  -  Rol: Soporte ABAP y HCM  -  Proyecto: N/A  -  Tipo: Soporte y ajustes ABAP y HCM"],
-  ["Granos y Cereales", "Duracion: Agosto 2022 - Enero 2023  -  Industria: Productora de alimentos  -  Rol: Desarrollador ABAP S/4 HANA - Consultor PT  -  Proyecto: Cronos  -  Tipo: Implementacion nomina"],
-  ["Mesa de ayuda MQA - Cierre proyectos", "Duracion: Julio 2022 - Julio 2022  -  Industria: Varios  -  Rol: Soporte ABAP y HCM  -  Proyecto: N/A  -  Tipo: N/A"],
-  ["Grupo Uribe", "Duracion: Enero 2020 - Junio 2022  -  Industria: Comercializadora  -  Rol: Desarrollador ABAP S/4 HANA  -  Proyecto: Indigo  -  Tipo: Implementacion SAP"],
-  ["Mesa de ayuda MQA - Cierre proyectos", "Duracion: Enero 2020 - Abril 2020  -  Industria: Varios  -  Rol: Soporte ABAP y HCM  -  Proyecto: N/A  -  Tipo: N/A"],
-  ["Constructora Jaramillo Mora", "Duracion: Enero 2019 - Diciembre 2019  -  Industria: Constructora  -  Rol: Desarrollador ABAP S/4 HANA  -  Proyecto: Constructora Jaramillo Mora  -  Tipo: Implementacion vertical de construccion"],
-  ["Mesa de ayuda MQA", "Duracion: Junio 2018 - Diciembre 2018  -  Industria: Varios  -  Rol: ABAP y HCM  -  Proyecto: N/A  -  Tipo: N/A"],
-  ["CO&TEX", "Duracion: Septiembre 2017 - Mayo 2018  -  Industria: Manufactura de ropa  -  Rol: Desarrollador ABAP/Consultor HXM ECC Version 6.8  -  Proyecto: Enlace  -  Tipo: Implementacion SAP"],
-  ["Mesa de ayuda MQA", "Duracion: Junio 2017 - Agosto 2017  -  Industria: Varios  -  Rol: ABAP y HCM  -  Proyecto: N/A  -  Tipo: N/A"],
-  ["TRIADA", "Duracion: Octubre 2016 - Mayo 2017  -  Industria: Construccion de vivienda  -  Rol: Desarrollador ABAP HXM ECC Version 6.4  -  Proyecto: TRIADA  -  Tipo: Implementacion SAP y vertical de construccion"],
-  ["La Sante - Grupo Carval", "Duracion: Julio 2016 - Agosto 2016  -  Industria: Farmaceutica  -  Rol: ABAP HCM ECC Version 6.4  -  Proyecto: N/A  -  Tipo: Desarrollos y ajustes ABAP"],
-  ["Texmoda - Peru", "Duracion: Diciembre 2015 - Julio 2016  -  Industria: Comercializadora  -  Rol: ABAP HCM / Implementacion modulo Gestion de tiempos de HCM ECC Version 6.4  -  Proyecto: N/A  -  Tipo: Implementacion del modulo PT y desarrollos ABAP"],
-  ["Sempertex", "Duracion: Mayo 2013 - Septiembre 2013  -  Industria: Produccion de globos y comercializadora  -  Rol: ABAP / ERP ECC Version 6.4  -  Proyecto: Sempertex  -  Tipo: Implementacion SAP"],
-  ["TRENACO", "Duracion: Mayo 2013  -  Industria: Compra y venta de carbon y petroleo  -  Rol: ABAP / ERP  -  Proyecto: N/A  -  Tipo: Levantamiento informacion"],
+  ["Mesa de ayuda MQA - Cierre proyectos", "Duraci\u00f3n: Actual \u00b7 Industria: Varios \u00b7 Rol: Soporte ABAP y HCM \u00b7 Proyecto: N/A \u00b7 Tipo: N/A"],
+  ["Proquinal", "Duraci\u00f3n: Julio 2024 - mayo 2026 \u00b7 Industria: Petroqu\u00edmico y Textil \u00b7 Rol: Desarrollador ABAP Cloud S/4 HANA / Consultor SAP Integration Suite (CPI) \u00b7 Proyecto: EASI \u00b7 Tipo: Desarrollo y ajustes ABAP"],
+  ["Albateq", "Duraci\u00f3n: Marzo 2024 - Junio 2024 \u00b7 Industria: Productora de alimentos \u00b7 Rol: Desarrollador ABAP S/4 HANA / Consultor SAP CPI \u00b7 Proyecto: Agesia \u00b7 Tipo: Desarrollo y ajustes ABAP"],
+  ["Ramo", "Duraci\u00f3n: Febrero 2024 - Marzo 2024 \u00b7 Industria: Productora de alimentos \u00b7 Rol: Desarrollador ABAP S/4 HANA \u00b7 Proyecto: N/A \u00b7 Tipo: Implementaci\u00f3n SAP Concur"],
+  ["Mesa de ayuda MQA - Cierre proyectos", "Duraci\u00f3n: Febrero 2023 - Enero 2024 \u00b7 Industria: Varios \u00b7 Rol: Soporte ABAP y HCM \u00b7 Proyecto: N/A \u00b7 Tipo: Soporte y ajustes ABAP y HCM"],
+  ["Granos y Cereales", "Duraci\u00f3n: Agosto 2022 - Enero 2023 \u00b7 Industria: Productora de alimentos \u00b7 Rol: Desarrollador ABAP S/4 HANA - Consultor PT \u00b7 Proyecto: Cronos \u00b7 Tipo: Implementaci\u00f3n n\u00f3mina"],
+  ["Mesa de ayuda MQA - Cierre proyectos", "Duraci\u00f3n: Julio 2022 - Julio 2022 \u00b7 Industria: Varios \u00b7 Rol: Soporte ABAP y HCM \u00b7 Proyecto: N/A \u00b7 Tipo: N/A"],
+  ["Grupo Uribe", "Duraci\u00f3n: Enero 2020 - Junio 2022 \u00b7 Industria: Comercializadora \u00b7 Rol: Desarrollador ABAP S/4 HANA \u00b7 Proyecto: Indigo \u00b7 Tipo: Implementaci\u00f3n SAP"],
+  ["Mesa de ayuda MQA - Cierre proyectos", "Duraci\u00f3n: Enero 2020 - Abril 2020 \u00b7 Industria: Varios \u00b7 Rol: Soporte ABAP y HCM \u00b7 Proyecto: N/A \u00b7 Tipo: N/A"],
+  ["Constructora Jaramillo Mora", "Duraci\u00f3n: Enero 2019 - Diciembre 2019 \u00b7 Industria: Constructora \u00b7 Rol: Desarrollador ABAP S/4 HANA \u00b7 Proyecto: Constructora Jaramillo Mora \u00b7 Tipo: Implementaci\u00f3n vertical de construcci\u00f3n"],
+  ["Mesa de ayuda MQA", "Duraci\u00f3n: Junio 2018 - Diciembre 2018 \u00b7 Industria: Varios \u00b7 Rol: ABAP y HCM \u00b7 Proyecto: N/A \u00b7 Tipo: N/A"],
+  ["CO&TEX", "Duraci\u00f3n: Septiembre 2017 - Mayo 2018 \u00b7 Industria: Manufactura de ropa \u00b7 Rol: Desarrollador ABAP/Consultor HXM ECC Versi\u00f3n 6.8 \u00b7 Proyecto: Enlace \u00b7 Tipo: Implementaci\u00f3n SAP"],
+  ["Mesa de ayuda MQA", "Duraci\u00f3n: Junio 2017 - Agosto 2017 \u00b7 Industria: Varios \u00b7 Rol: ABAP y HCM \u00b7 Proyecto: N/A \u00b7 Tipo: N/A"],
+  ["TRIADA", "Duraci\u00f3n: Octubre 2016 - Mayo 2017 \u00b7 Industria: Construcci\u00f3n de vivienda \u00b7 Rol: Desarrollador ABAP HXM ECC Versi\u00f3n 6.4 \u00b7 Proyecto: TRIADA \u00b7 Tipo: Implementaci\u00f3n SAP y vertical de construcci\u00f3n"],
+  ["La Sant\u00e9 - Grupo Carval", "Duraci\u00f3n: Julio 2016 - Agosto 2016 \u00b7 Industria: Farmac\u00e9utica \u00b7 Rol: ABAP HCM ECC Versi\u00f3n 6.4 \u00b7 Proyecto: N/A \u00b7 Tipo: Desarrollos y ajustes ABAP"],
+  ["Texmoda - Per\u00fa", "Duraci\u00f3n: Diciembre 2015 - Julio 2016 \u00b7 Industria: Comercializadora \u00b7 Rol: ABAP HCM / Implementaci\u00f3n m\u00f3dulo Gesti\u00f3n de tiempos de HCM ECC Versi\u00f3n 6.4 \u00b7 Proyecto: N/A \u00b7 Tipo: Implementaci\u00f3n del m\u00f3dulo PT y desarrollos ABAP"],
+  ["Sempertex", "Duraci\u00f3n: Mayo 2013 - Septiembre 2013 \u00b7 Industria: Producci\u00f3n de globos y comercializadora \u00b7 Rol: ABAP / ERP ECC Versi\u00f3n 6.4 \u00b7 Proyecto: Sempertex \u00b7 Tipo: Implementaci\u00f3n SAP"],
+  ["TRENACO", "Duraci\u00f3n: Mayo 2013 \u00b7 Industria: Compra y venta de carb\u00f3n y petr\u00f3leo \u00b7 Rol: ABAP / ERP \u00b7 Proyecto: N/A \u00b7 Tipo: Levantamiento informaci\u00f3n"],
 ];
 
 const actualisapProjectsEs = [
-  ["CNR - Colombian Natural Resources", "Duracion: Noviembre 2012 hasta abril 2013  -  Industria: Minera  -  Rol: ABAP - ERP  -  Proyecto: CNR - Colombian Natural Resources  -  Tipo: Desarrollos y ajustes ABAP"],
-  ["TERRANVM", "Duracion: Agosto 2012 hasta Noviembre 2012  -  Industria: Servicios inmobiliarios  -  Rol: ABAP HCM  -  Proyecto: N/A  -  Tipo: Desarrollos y ajustes ABAP"],
-  ["Transportes Joalco S.A.", "Duracion: Agosto 2012 hasta Noviembre 2012  -  Industria: Transportes  -  Rol: ABAP HCM / ERP  -  Proyecto: Transportes Joalco S.A.  -  Tipo: Desarrollos y ajustes ABAP"],
+  ["CNR - Colombian Natural Resources", "Duraci\u00f3n: Noviembre 2012 hasta abril 2013 \u00b7 Industria: Minera \u00b7 Rol: ABAP - ERP \u00b7 Proyecto: CNR - Colombian Natural Resources \u00b7 Tipo: Desarrollos y ajustes ABAP"],
+  ["TERRANVM", "Duraci\u00f3n: Agosto 2012 hasta Noviembre 2012 \u00b7 Industria: Servicios inmobiliarios \u00b7 Rol: ABAP HCM \u00b7 Proyecto: N/A \u00b7 Tipo: Desarrollos y ajustes ABAP"],
+  ["Transportes Joalco S.A.", "Duraci\u00f3n: Agosto 2012 hasta Noviembre 2012 \u00b7 Industria: Transportes \u00b7 Rol: ABAP HCM / ERP \u00b7 Proyecto: Transportes Joalco S.A. \u00b7 Tipo: Desarrollos y ajustes ABAP"],
 ];
 
 const consultoriaProjectsEs = [
-  ["Universidad CES", "Duracion: Marzo de 2012 hasta Agosto 2012  -  Industria: Educacion  -  Rol: ABAP  -  Proyecto: Universidad CES  -  Tipo: Desarrollos y ajustes ABAP"],
-  ["Universidad de los Andes", "Duracion: Octubre de 2011 hasta Febrero 2012  -  Industria: Educacion  -  Rol: ABAP  -  Proyecto: Universidad de los Andes  -  Tipo: Desarrollos y ajustes ABAP"],
-  ["PREBEL", "Duracion: Septiembre de 2011 hasta Octubre 2011  -  Industria: Comercializacion / Produccion  -  Rol: ABAP  -  Proyecto: N/A  -  Tipo: Desarrollos y ajustes ABAP"],
+  ["Universidad CES", "Duraci\u00f3n: Marzo de 2012 hasta Agosto 2012 \u00b7 Industria: Educaci\u00f3n \u00b7 Rol: ABAP \u00b7 Proyecto: Universidad CES \u00b7 Tipo: Desarrollos y ajustes ABAP"],
+  ["Universidad de los Andes", "Duraci\u00f3n: Octubre de 2011 hasta Febrero 2012 \u00b7 Industria: Educaci\u00f3n \u00b7 Rol: ABAP \u00b7 Proyecto: Universidad de los Andes \u00b7 Tipo: Desarrollos y ajustes ABAP"],
+  ["PREBEL", "Duraci\u00f3n: Septiembre de 2011 hasta Octubre 2011 \u00b7 Industria: Comercializaci\u00f3n / Producci\u00f3n \u00b7 Rol: ABAP \u00b7 Proyecto: N/A \u00b7 Tipo: Desarrollos y ajustes ABAP"],
 ];
 
 const netpartnersProjectsEs = [
-  ["Ecopetrol", "Duracion: Julio de 2011 hasta Julio 2011  -  Industria: Petrolera  -  Rol: Consultor HCM/SAP - ABAP  -  Proyecto: N/A  -  Tipo: Ajustes ABAP"],
-  ["Ingenio Incauca y Providencia", "Duracion: Enero de 2011 hasta Junio 2011  -  Industria: Produccion alcohol e ingenio azucarero  -  Rol: Consultor junior PY  -  Proyecto: N/A  -  Tipo: Implementacion de modulos OM PA CM PT SP"],
+  ["Ecopetrol", "Duraci\u00f3n: Julio de 2011 hasta Julio 2011 \u00b7 Industria: Petrolera \u00b7 Rol: Consultor HCM/SAP - ABAP \u00b7 Proyecto: N/A \u00b7 Tipo: Ajustes ABAP"],
+  ["Ingenio Incauca y Providencia", "Duraci\u00f3n: Enero de 2011 hasta Junio 2011 \u00b7 Industria: Producci\u00f3n alcohol e ingenio azucarero \u00b7 Rol: Consultor junior PY \u00b7 Proyecto: N/A \u00b7 Tipo: Implementaci\u00f3n de m\u00f3dulos OM PA CM PT SP"],
 ];
 
 const tecnoProjectsEs = [
-  ["COMFENALCO", "Duracion: Marzo de 2010 hasta Diciembre 2010  -  Industria: Servicios  -  Rol: Consultor PT desarrollador ABAP HCM - PT  -  Proyecto: Implementacion de modulo PT  -  Tipo: Implementacion de modulo PT"],
-  ["INTERQUIM", "Duracion: Febrero de 2010 hasta Febrero de 2010  -  Industria: Industria quimica  -  Rol: Desarrollador ABAP HCM/SAP  -  Proyecto: Desarrollo de programas ABAP HCM  -  Tipo: Desarrollo de programas"],
-  ["INTERQUIMEC", "Duracion: Enero de 2010 hasta Enero de 2010  -  Industria: Industria quimica  -  Rol: Consultor HCM/SAP  -  Proyecto: Soporte Salida en vivo  -  Tipo: Soporte"],
-  ["ECOPETROL", "Duracion: Noviembre 2009 hasta Diciembre 2009  -  Industria: Petrolera  -  Rol: Consultor PT  -  Proyecto: Ajuste del sistema de Gestion de Tiempos  -  Tipo: Soporte"],
-  ["GOODYEAR", "Duracion: Diciembre de 2008 hasta Septiembre 2009  -  Industria: Produccion de llantas  -  Rol: Consultor HCM/SAP PT e incentivos, desarrollador ABAP Para Incentivos  -  Proyecto: N/A  -  Tipo: Actualizacion"],
-  ["ECOPETROL", "Duracion: Julio de 2008 hasta Noviembre 2008  -  Industria: Petrolera  -  Rol: Desarrollador ABAP HCM/SAP, consultor PT Y PA  -  Proyecto: N/A  -  Tipo: Soporte"],
-  ["UNIDELCA", "Duracion: Julio de 2008  -  Industria: Casino  -  Rol: Consultor HCM/SAP  -  Proyecto: N/A  -  Tipo: Soporte"],
-  ["Clinica Palermo", "Duracion: Mayo de 2008 hasta Junio 2008  -  Industria: Servicios Medicos  -  Rol: Consultor HCM/SAP  -  Proyecto: N/A  -  Tipo: Soporte"],
-  ["Smurfit Carton de Colombia", "Duracion: Febrero de 2007 hasta Abril 2008  -  Industria: Produccion  -  Rol: Consultor/Desarrollador HCM  -  Proyecto: N/A  -  Tipo: Implementacion"],
-  ["Conconcreto", "Duracion: Julio de 2006 hasta Diciembre 2006  -  Industria: Construccion  -  Rol: Consultor/Desarrollador HCM  -  Proyecto: N/A  -  Tipo: Implementacion"],
-  ["Help desk SAP", "Duracion: Noviembre de 2005 al Junio 2006  -  Industria: Construccion  -  Rol: Consultor/Desarrollador HCM  -  Proyecto: N/A  -  Tipo: Soporte a clientes"],
+  ["COMFENALCO", "Duraci\u00f3n: Marzo de 2010 hasta Diciembre 2010 \u00b7 Industria: Servicios \u00b7 Rol: Consultor PT desarrollador ABAP HCM - PT \u00b7 Proyecto: Implementaci\u00f3n de m\u00f3dulo PT \u00b7 Tipo: Implementaci\u00f3n de m\u00f3dulo PT"],
+  ["INTERQUIM", "Duraci\u00f3n: Febrero de 2010 hasta Febrero de 2010 \u00b7 Industria: Industria qu\u00edmica \u00b7 Rol: Desarrollador ABAP HCM/SAP \u00b7 Proyecto: Desarrollo de programas ABAP HCM \u00b7 Tipo: Desarrollo de programas"],
+  ["INTERQUIMEC", "Duraci\u00f3n: Enero de 2010 hasta Enero de 2010 \u00b7 Industria: Industria qu\u00edmica \u00b7 Rol: Consultor HCM/SAP \u00b7 Proyecto: Soporte Salida en vivo \u00b7 Tipo: Soporte"],
+  ["ECOPETROL", "Duraci\u00f3n: Noviembre 2009 hasta Diciembre 2009 \u00b7 Industria: Petrolera \u00b7 Rol: Consultor PT \u00b7 Proyecto: Ajuste del sistema de Gesti\u00f3n de Tiempos \u00b7 Tipo: Soporte"],
+  ["GOODYEAR", "Duraci\u00f3n: Diciembre de 2008 hasta Septiembre 2009 \u00b7 Industria: Producci\u00f3n de llantas \u00b7 Rol: Consultor HCM/SAP PT e incentivos, desarrollador ABAP Para Incentivos \u00b7 Proyecto: N/A \u00b7 Tipo: Actualizaci\u00f3n"],
+  ["ECOPETROL", "Duraci\u00f3n: Julio de 2008 hasta Noviembre 2008 \u00b7 Industria: Petrolera \u00b7 Rol: Desarrollador ABAP HCM/SAP, consultor PT Y PA \u00b7 Proyecto: N/A \u00b7 Tipo: Soporte"],
+  ["UNIDELCA", "Duraci\u00f3n: Julio de 2008 \u00b7 Industria: Casino \u00b7 Rol: Consultor HCM/SAP \u00b7 Proyecto: N/A \u00b7 Tipo: Soporte"],
+  ["Cl\u00ednica Palermo", "Duraci\u00f3n: Mayo de 2008 hasta Junio 2008 \u00b7 Industria: Servicios M\u00e9dicos \u00b7 Rol: Consultor HCM/SAP \u00b7 Proyecto: N/A \u00b7 Tipo: Soporte"],
+  ["Smurfit Cart\u00f3n de Colombia", "Duraci\u00f3n: Febrero de 2007 hasta Abril 2008 \u00b7 Industria: Producci\u00f3n \u00b7 Rol: Consultor/Desarrollador HCM \u00b7 Proyecto: N/A \u00b7 Tipo: Implementaci\u00f3n"],
+  ["Conconcreto", "Duraci\u00f3n: Julio de 2006 hasta Diciembre 2006 \u00b7 Industria: Construcci\u00f3n \u00b7 Rol: Consultor/Desarrollador HCM \u00b7 Proyecto: N/A \u00b7 Tipo: Implementaci\u00f3n"],
+  ["Help desk SAP", "Duraci\u00f3n: Noviembre de 2005 al Junio 2006 \u00b7 Industria: Construcci\u00f3n \u00b7 Rol: Consultor/Desarrollador HCM \u00b7 Proyecto: N/A \u00b7 Tipo: Soporte a clientes"],
 ];
 
 const content = {
@@ -66,9 +66,9 @@ const content = {
     title: "Experiencia SAP",
     featured: "Etapas destacadas",
     viewDetail: "Ver detalle",
-    home: "<- Inicio",
+    home: "\u2190 Inicio",
     focusTitle: "Foco del rol",
-    projectsTitle: "Registros cronologicos del documento",
+    projectsTitle: "Registros cronol\u00f3gicos del documento",
     tagsLabel: "Areas clave",
     experiences: [
       {
@@ -77,7 +77,7 @@ const content = {
         role: "Soporte, desarrollo ABAP, HCM/HXM, S/4HANA, ABAP Cloud e Integration Suite",
         summary: "Registros desde soporte MQA actual hasta proyectos 2013.",
         focus:
-          "Etapa mas reciente, con soporte ABAP/HCM, desarrollos S/4HANA, ABAP Cloud, SAP Integration Suite/CPI, implementacion SAP Concur, PT, nomina y verticales de construccion. El orden de los registros respeta el documento fuente.",
+          "Etapa m\u00e1s reciente, con soporte ABAP/HCM, desarrollos S/4HANA, ABAP Cloud, SAP Integration Suite/CPI, implementaci\u00f3n SAP Concur, PT, n\u00f3mina y verticales de construcci\u00f3n. El orden de los registros respeta el documento fuente.",
         projects: mqaProjectsEs.map(([name, text]) => ({ name, text })),
         tags: ["ABAP", "ABAP Cloud", "S/4HANA", "SAP CPI", "HCM/HXM", "PT/PY"],
       },
@@ -85,39 +85,39 @@ const content = {
         company: "Actualisap Consultores SAS",
         period: "Agosto 2012 - Mayo 2013",
         role: "Consultor ABAP HCM / ERP",
-        summary: "Mineria, servicios inmobiliarios y transporte.",
+        summary: "Miner\u00eda, servicios inmobiliarios y transporte.",
         focus:
-          "Desarrollos y ajustes ABAP para clientes de mineria, servicios inmobiliarios y transporte, manteniendo el orden indicado en el archivo de experiencia.",
+          "Desarrollos y ajustes ABAP para clientes de miner\u00eda, servicios inmobiliarios y transporte, manteniendo el orden indicado en el archivo de experiencia.",
         projects: actualisapProjectsEs.map(([name, text]) => ({ name, text })),
         tags: ["ABAP", "ERP", "HCM", "Reportes", "Ajustes"],
       },
       {
-        company: "Consultoria Organizacional",
+        company: "Consultor\u00eda Organizacional",
         period: "Septiembre 2011 - Agosto 2012",
         role: "Consultor ABAP",
-        summary: "Educacion, interfaces, formularios y desarrollos ABAP.",
+        summary: "Educaci\u00f3n, interfaces, formularios y desarrollos ABAP.",
         focus:
-          "Desarrollos ABAP para instituciones educativas y companias de comercializacion/produccion, con formularios, cargas, interfaces y ajustes.",
+          "Desarrollos ABAP para instituciones educativas y compa\u00f1\u00edas de comercializaci\u00f3n/producci\u00f3n, con formularios, cargas, interfaces y ajustes.",
         projects: consultoriaProjectsEs.map(([name, text]) => ({ name, text })),
-        tags: ["ABAP", "Educacion", "Interfaces", "Formularios"],
+        tags: ["ABAP", "Educaci\u00f3n", "Interfaces", "Formularios"],
       },
       {
         company: "Netpartners / HR Solutions",
         period: "Enero 2011 - Julio 2011",
         role: "Consultor HCM / SAP ABAP / PY",
-        summary: "Soporte HCM, ajustes ABAP e implementacion PY.",
+        summary: "Soporte HCM, ajustes ABAP e implementaci\u00f3n PY.",
         focus:
-          "Soporte y consultoria SAP HCM/ABAP, con participacion en ajustes ABAP e implementacion de modulos de HCM y nomina.",
+          "Soporte y consultor\u00eda SAP HCM/ABAP, con participaci\u00f3n en ajustes ABAP e implementaci\u00f3n de m\u00f3dulos de HCM y n\u00f3mina.",
         projects: netpartnersProjectsEs.map(([name, text]) => ({ name, text })),
         tags: ["SAP HCM", "ABAP", "PY", "PT", "Soporte"],
       },
       {
-        company: "Tecnoinformatica Latinoamerica S.A.",
+        company: "Tecnoinform\u00e1tica Latinoam\u00e9rica S.A.",
         period: "Noviembre 2005 - Diciembre 2010",
         role: "Consultor / Desarrollador HCM y ABAP",
         summary: "Implementaciones HCM, PT, soporte y desarrollos ABAP.",
         focus:
-          "Etapa inicial SAP con implementacion de modulos HCM, gestion de tiempos, desarrollos ABAP HCM, soporte de salida en vivo y atencion a clientes.",
+          "Etapa inicial SAP con implementaci\u00f3n de m\u00f3dulos HCM, gesti\u00f3n de tiempos, desarrollos ABAP HCM, soporte de salida en vivo y atenci\u00f3n a clientes.",
         projects: tecnoProjectsEs.map(([name, text]) => ({ name, text })),
         tags: ["SAP HCM", "PT", "PA", "PY", "ABAP", "Soporte"],
       },
@@ -133,7 +133,7 @@ content.en = {
   title: "SAP Experience",
   featured: "Featured stages",
   viewDetail: "View detail",
-  home: "<- Home",
+  home: "\u2190 Home",
   focusTitle: "Role focus",
   projectsTitle: "Chronological records from the source document",
   tagsLabel: "Key areas",
@@ -183,9 +183,9 @@ function renderExperienceCards(page) {
       </span>
       <span>
         <h3>${experience.company}</h3>
-        <p>${experience.period}  -  ${experience.summary}</p>
+        <p>${experience.period} \u00b7 ${experience.summary}</p>
       </span>
-      <span class="arrow" aria-hidden="true">></span>
+      <span class="arrow" aria-hidden="true">\u203a</span>
     `;
 
     card.addEventListener("click", () => {
